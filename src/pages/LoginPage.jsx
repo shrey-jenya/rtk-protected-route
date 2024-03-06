@@ -11,7 +11,7 @@ const LoginPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (userName === '123' && password === '123') {
-            dispatch(login({ userName }))
+            dispatch(login())
             navigate('/dashboard')
         } else {
             setIsError('Invalid username or password')

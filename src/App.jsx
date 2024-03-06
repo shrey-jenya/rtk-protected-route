@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import User from './api/User'
 
 const App = () => {
   return (
@@ -20,10 +21,14 @@ const App = () => {
             path="/dashboard"
             element={<Dashboard />}
           />
+          <Route
+            path="/user"
+            element={<User />}
+          />
         </Routes>
         {/* <Logout/> */}
         <div>
-            <p class="text-center text-gray-500 dark:text-gray-400"><a href="https://github.com/shrey-jenya" > &copy; Shrey</a></p>
+            <p className="text-center text-gray-500 dark:text-gray-400"><a href="https://github.com/shrey-jenya" > &copy; Shrey</a></p>
         </div>
       </div>
     </Router>
